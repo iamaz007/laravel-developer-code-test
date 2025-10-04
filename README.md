@@ -61,3 +61,4 @@ Sanctum is used for token-based authentication.
 - Indexes for locale, updated_at, and tag name
 - Seeder generates 100k+ records for performance tests
 - Export query averages ~260 ms for a 4.6 MB JSON payload
+- CRUD query averages ~150 ms

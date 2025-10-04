@@ -22,18 +22,21 @@ Designed for scalability and performance testing.
    php artisan key:generate
 
 2. Update .env
-DB_CONNECTION=mysql
+
+`DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=laravel_test
 DB_USERNAME=root
-DB_PASSWORD=root
+DB_PASSWORD=root`
 
 3. Run migrations and seeders
-php artisan migrate --seed
+`php artisan migrate --seed`
 
 4. Start the app
-php artisan serve
+`php artisan serve`
+
+## About Application
 
 **Authentication**
 Sanctum is used for token-based authentication.
@@ -49,8 +52,7 @@ Sanctum is used for token-based authentication.
 | GET    | `/api/export?locale=en&tags[]=web` | Export JSON translations                    |
 
 
-Design Notes
-
+## Design Notes
 - Sanctum for API security
 - Normalized schema: keys, values, tags, locales
 - Efficient joined query for export
